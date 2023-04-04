@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ubuntu51506537.eastus.cloudapp.azure.com:8761/eureka
+  instance:
+    prefer-ip-address: true
+      
+spring:
+  application:
+    name: exuber-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
